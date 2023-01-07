@@ -30,7 +30,7 @@ export class AuthenticateDeliverymanUseCase {
             throw new Error("Username or password invalid!");
         }
 
-        const token = sign({ username }, "000600000355570930188", {
+        const token = sign({ username }, "00060000035557093018800", {
             subject: deliveryman.id,
             expiresIn: "1d"
         });
